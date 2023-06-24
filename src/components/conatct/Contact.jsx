@@ -26,7 +26,7 @@ function Contact() {
       const {
         data: { results },
       } = await axios(
-        `https://randomuser.me/api/?page=${page}&results=4&inc=name,picture,phone`
+        `https://randomuser.me/api/?page=${page}&results=8&inc=name,picture,phone`
       );
 
       setContacts((prev) => [...prev, ...results]);
